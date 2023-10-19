@@ -80,6 +80,24 @@ Concaténez les trois variables et vérifiez si sa taille est
 suppérieure à 100 alors affichez "C'est une grande phrase" 
 sinon affichez "C'est une petite phrase". */
 
-function checkWord('firstWord, 'secondWord', 'treethWord'){
-
+function checkWordLenght(firstWord, secondWord, treethWord){
+    let wordLenght = firstWord + secondWord + treethWord;
+    
+    if(wordLenght.lenght > 100){
+        console.log(`c'est une grande phrase`)
+    }
+    else console.log(`c'est une petite phrase`);
 }
+
+
+/*3. Déclarer et définir 2 variables misteryNumber et myNumber de type number.
+En utilisant uniquement l'opérateur ternaire, on affiche :
+
+Si les 2 nombres sont égaux Congratulations !
+Sinon
+Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
+Sinon on affiche - */
+
+let misteryNumber = "";
+let 
+
