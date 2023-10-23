@@ -124,3 +124,17 @@ function findLargest(firstNumber, secondNumber,
     findLargest(8, 4, 9);
     
 
+    //Create which Check if a triangle is equilateral, scalene, or isosceles
+     function checkTriangleTypes(a, b, c){
+        if(a===b && b===c){
+            console.log('equilateral');
+        } else if(a !== b && b !==c){
+            console.log('scalene');
+        }
+        else{
+            console.log('isoscele');
+        }
+     }
+     checkTriangleTypes(45, 45, 45);
+    
+
