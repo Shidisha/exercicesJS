@@ -106,4 +106,21 @@ const misteryNumber = 4;
 const myNumber = 2;
 misteryNumber === myNumber? console.log("Congratulations!"): myNumber < misteryNumber? console.log("+"): console.log("-");
 
+//4. Create Function `findLargest()` finds the largest of three numbers.
+
+function findLargest(firstNumber, secondNumber,
+    treetNumber){
+        let largestNum = firstNumber;
+        if(largestNum < secondNumber){
+            largestNum = secondNumber;
+        }
+        else {
+            if(largestNum < treetNumber){
+                largestNum = treetNumber;
+            }
+        }
+        console.log(largestNum);
+    }
+    findLargest(8, 4, 9);
+    
 
