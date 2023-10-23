@@ -137,4 +137,38 @@ function findLargest(firstNumber, secondNumber,
      }
      checkTriangleTypes(45, 45, 45);
     
+     /*Create `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+Print result of num1+num2 if operation is “add”
+Print result of num1-num2 if operation is “subtract”
+Print result of num1*num2 if operation is “multiply”
+Print result of num1/num2 if operation is “divide”
+Print result of num1%num2 if operation is “modulus”
+Else print “Invalid operation” */
+
+function evalNumber(){
+    const numberFirst=30;
+    const numberSecond=7;
+    const currentOpera='modulus';
+    switch (currentOpera) {
+        case 'add':
+            console.log(`Result: ${numberFirst + numberSecond}`);
+        break;
+        case 'subtract':
+            console.log(`Result: ${numberFirst - numberSecond}`);
+        break;
+        case 'multiply':
+            console.log(`Result: ${numberFirst * numberSecond}`);
+        break;
+        case 'divide':
+            console.log(`Result: ${numberFirst / numberSecond}`);
+        break;
+        case 'modulus':
+            console.log(`Result: ${numberFirst % numberSecond}`);
+        break;
+        default:
+            console.log("Invalid Operation");
+        }
+        
+}
+evalNumber();
 
