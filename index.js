@@ -124,7 +124,7 @@ function findLargest(firstNumber, secondNumber,
     findLargest(8, 4, 9);
     
 
-    //Create which Check if a triangle is equilateral, scalene, or isosceles
+    //5.Create which Check if a triangle is equilateral, scalene, or isosceles
      function checkTriangleTypes(a, b, c){
         if(a===b && b===c){
             console.log('equilateral');
@@ -137,7 +137,7 @@ function findLargest(firstNumber, secondNumber,
      }
      checkTriangleTypes(45, 45, 45);
     
-     /*Create `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+     /*7.Create `evalNumbers()` prints the result after evaluating arithmetic operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
 Print result of num1+num2 if operation is “add”
 Print result of num1-num2 if operation is “subtract”
 Print result of num1*num2 if operation is “multiply”
@@ -172,3 +172,17 @@ function evalNumber(){
 }
 evalNumber();
 
+
+/*	
+Create Function `checkLeapYear()` find if the given year is a leap year 
+If year is divisble by 4 and not divisble by 100 then print “leap year”.
+Or if year is divisible by 400 then print “leap year”.
+Else print “not a leap year”. */
+function checkLeapYear(aYear){
+    if(aYear % 4 == 0 && aYear % 100 !== 0 || aYear % 400){
+        console.log("leap year")
+    } else{
+        console.log("not a leap year");
+    }
+}
+checkLeapYear(2007);
