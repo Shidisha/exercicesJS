@@ -168,21 +168,46 @@ function evalNumber(){
         default:
             console.log("Invalid Operation");
         }
-        
 }
 evalNumber();
 
 
-/*	
+/*8. 
 Create Function `checkLeapYear()` find if the given year is a leap year 
 If year is divisble by 4 and not divisble by 100 then print “leap year”.
 Or if year is divisible by 400 then print “leap year”.
 Else print “not a leap year”. */
 function checkLeapYear(aYear){
-    if(aYear % 4 == 0 && aYear % 100 !== 0 || aYear % 400){
+    if(aYear % 4 == 0 &&( aYear % 100 !== 0 || aYear % 400 ===0)){
         console.log("leap year")
     } else{
         console.log("not a leap year");
     }
 }
-checkLeapYear(2007);
+checkLeapYear(2000);
+
+/*Function `findDaysInMonth()` finds the number of days in a given month of a year.
+If month is outside the range of 1 and 12 print “Invalid month”.
+If month is equal to 2 ie, February print “29 days” if leap year else print “28 days” .
+Else if month is equal to 4, 6, 9 or 11 print “30 days”.
+Else print “31 days”. */
+
+function findDaysInMonth(year, month){
+    if(month <1 || month >12){
+        console.log("Invalid month");
+    }
+        if(month === 2){
+        if(year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)){
+            console.log("29 days");
+        } else {
+            console.log("28 days");
+        }
+    }
+    else if([1, 3, 5, 7, 8, 10, 12].includes(month)){
+        console.log("31 days")
+    }
+    else {
+        console.log("30 days");
+    }
+}
+findDaysInMonth(2020, 2);
