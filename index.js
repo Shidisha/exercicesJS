@@ -40,7 +40,7 @@ function a(){
     return 'Haydo!';
  }
 
- let salutation = greet();
+ const salutation = greet();
 
  /*9. function hello() {
   return 'Hi!';
@@ -80,14 +80,18 @@ Concaténez les trois variables et vérifiez si sa taille est
 suppérieure à 100 alors affichez "C'est une grande phrase" 
 sinon affichez "C'est une petite phrase". */
 
-function checkWordLenght(firstWord, secondWord, treethWord){
-    let wordLenght = firstWord + secondWord + treethWord;
+function checkWordLenght(firstWord, secondWord, treethhWord){
+    const wordLenght = firstWord + secondWord + treethhWord;
     
     if(wordLenght.lenght > 100){
-        console.log(`c'est une grande phrase`)
+        console.log("c'est une grande phrase");
     }
-    else console.log(`c'est une petite phrase`);
+    else {
+    console.log("c'est une petite phrase");
 }
+    
+}
+checkWordLenght("salut", "comment", "tu");
 
 
 /*3. Déclarer et définir 2 variables misteryNumber et myNumber de type number.
@@ -98,5 +102,8 @@ Sinon
 Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
 Sinon on affiche - */
 
+const misteryNumber = 4;
+const myNumber = 2;
+misteryNumber === myNumber? console.log("Congratulations!"): myNumber < misteryNumber? console.log("+"): console.log("-");
 
 
